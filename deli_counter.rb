@@ -2,7 +2,7 @@ katz_deli = Array.new
 
 def line(array)
   
-  return puts "The line is currently empty." if !array.any?
+  return "The line is currently empty." if !array.any?
   
   new_array = Array.new
   array.each_with_index{|name, index| new_array.push(" #{index + 1}. #{name}")}
