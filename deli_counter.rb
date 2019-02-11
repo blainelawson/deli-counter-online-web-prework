@@ -1,12 +1,12 @@
 katz_deli = Array.new
 
 def line(array)
-  
-  return puts "The line is currently empty." if !array.any?
-  
-  new_array = Array.new
-  array.each_with_index{|name, index| new_array.push(" #{index + 1}. #{name}")}
-  puts "The line is currently:#{new_array.join}"
+  if !array.any?
+    puts "The line is currently empty." 
+  else
+    new_array = Array.new
+    array.each_with_index{|name, index| new_array.push(" #{index + 1}. #{name}")}
+    puts "The line is currently:#{new_array.join}"
 end
 
 def now_serving(array)
