@@ -21,11 +21,12 @@ end
 
 def take_a_number(array, name)
   if !array.any?
-    array.push(name)
     puts "Welcome, #{name}. You are number 1 in line." 
-  else
-    array.push(name)
+  end
+  
+  array.push(name)
+  
+  if array.length > 1
     puts "Welcome, #{name}. You are number #{array.find_index("#{name}") + 1} in line."
   end
-  array.push(name)
 end
