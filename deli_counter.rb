@@ -11,10 +11,12 @@ def line(array)
 end
 
 def now_serving(array)
-  return puts "There is nobody waiting to be served!" if !array.any?
-  
-  next_in_line = array.shift
-  puts "Currently serving #{next_in_line}."
+  if !array.any? 
+    puts "There is nobody waiting to be served!" 
+  else
+    next_in_line = array.shift
+    puts "Currently serving #{next_in_line}."
+  end
 end
 
 def take_a_number(array, name)
