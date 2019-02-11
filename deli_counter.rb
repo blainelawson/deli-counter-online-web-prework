@@ -7,6 +7,7 @@ def line(array)
     new_array = Array.new
     array.each_with_index{|name, index| new_array.push(" #{index + 1}. #{name}")}
     puts "The line is currently:#{new_array.join}"
+  end
 end
 
 def now_serving(array)
