@@ -20,13 +20,6 @@ def now_serving(array)
 end
 
 def take_a_number(array, name)
-  if !array.any?
-    puts "Welcome, #{name}. You are number 1 in line." 
-  end
-  
   array.push(name)
-  
-  if array.length > 1
-    puts "Welcome, #{name}. You are number #{array.find_index("#{name}") + 1} in line."
-  end
+  puts "Welcome, #{name}. You are number #{array.find_index("#{name}") + 1} in line."
 end
