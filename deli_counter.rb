@@ -20,7 +20,8 @@ def now_serving(array)
 end
 
 def take_a_number(array, name)
-  if !array.any? 
+  if !array.any?
+    array.push(name)
     puts "Welcome, #{name}. You are number 1 in line." 
   else
     array.push(name)
